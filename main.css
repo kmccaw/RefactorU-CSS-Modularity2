@@ -1,0 +1,27 @@
+/* ADD YOUR STYLES HERE */
+.horiz-spaced {
+	text-align: center;
+}
+
+.horiz-spaced > * {
+	display: inline-block;
+	padding: 15px;
+	vertical-align: top;
+	border: 1px dashed blue;
+}
+
+.horiz-spaced > ol,
+.horiz-spaced > ul {
+	list-style-position: inside;
+	text-align: left;
+}
+
+.vert-spaced {
+	height: 300px;
+	display: table;
+}
+
+.vert-spaced > * {
+	display: table-cell;
+	vertical-align: middle;
+}
