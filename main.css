@@ -27,6 +27,7 @@
 }
 
 .inline-list {
+	list-style-type: none;
 }
 
 .inline-list li {
@@ -34,12 +35,13 @@
 }
 
 .big-button, .med-button, .small-button {
-	background-color: red;
+	background-color: #ED828A;
 	color: white;
 	border-radius: 5px;
 	display: inline-block;
 	border: none;
 	text-decoration: none;
+	font-family: cursive;
 }
 
 .big-button {
@@ -57,9 +59,9 @@
 	font-size: 1em;
 }
 
-nav ul {
+.nav-menu ul {
 	list-style-type: none;
-	background-color: red;
+	background-color: #ED828A;
 	border-radius: 5px;
 	border: none;
 	padding: 0px;
@@ -67,19 +69,138 @@ nav ul {
 	display: inline-block;
 }
 
-nav ul li {
+.nav-menu ul li {
 	display: inline-block;
 	padding: 15px 30px 15px 30px;
 }
 
-nav ul li:hover a {
+.nav-menu ul li:hover a {
 	font-size: 1.5em;
-	color: yellow;
+	color: gold;
 	text-decoration: none;
 }
 
-nav ul li a {
+.nav-menu ul li a {
 	font-size: 1.5em;
 	color: white;
 	text-decoration: none;
+}
+
+.pagination {
+	list-style-type: none;
+}
+
+.pagination li {
+	display: inline-block;
+	margin: 0px 8px 0px 8px;
+
+}
+
+.pagination li * {
+	font-size: 15pt;
+	line-height: 100px;
+	vertical-align: middle;
+	padding: 0px 10px 10px 10px;
+	text-decoration: none;
+}
+
+.pagination li a {
+	color: #ED828A;
+	border-bottom: 3px solid #ED828A; 
+}
+
+.pagination li span {
+	color: gray;
+	border-bottom: 3px solid gray;
+}
+
+.pagination li:first-child a,
+.pagination li:last-child a {
+	border: none;
+}
+
+.pagination li:hover a {
+	color: gold;
+	border-bottom-color: gold;
+}
+
+.user-comment {
+	position: relative;
+	min-height: 82px;
+}
+
+.user-image {
+	float: left;
+}
+
+.user-image img {
+	width: 80px;
+	height: 80px;
+}
+
+.comment-content {
+	margin-left: 90px;
+	display: block;
+}
+
+.comment-content .user-comment {
+	min-height: 62px;
+}
+
+.comment-content .user-image img {
+	width: 60px;
+	height: 60px;
+}
+
+.comment-content .comment-content {
+	margin-left: 70px;
+}
+
+.comment-content strong {
+	display: inline-block;
+}
+
+.comment-content time {
+	display: inline-block;
+	font-size: 0.7em;
+	color: gray;
+}
+
+.comment-content p {
+	display: block;
+}
+
+.tab-menu {
+	display: block;
+	list-style-type: none;
+	position: relative;
+	z-index: 2;
+}
+
+.tab-menu li {
+	display: inline-block;
+	padding: 5px 15px 5px 15px;
+	border: 1px solid blue;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background-color: white;
+}
+
+.tab-menu li * {
+	font-weight: bold;
+	text-decoration: none;
+	color: blue;
+}
+
+.tab-menu .active-tab {
+	border-bottom: 1px solid white;
+}
+
+.tab-content {
+	position: relative;
+	top: -1px;
+	border: 1px solid blue;
+	border-radius: 8px;
+	z-index: 1;
+	padding: 15px;
 }
