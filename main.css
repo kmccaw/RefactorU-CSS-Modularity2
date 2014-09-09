@@ -16,12 +16,70 @@
 	text-align: left;
 }
 
-.vert-spaced {
+.vertical-container {
 	height: 300px;
-	display: table;
 }
 
-.vert-spaced > * {
-	display: table-cell;
-	vertical-align: middle;
+.vertically-centered {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.inline-list {
+}
+
+.inline-list li {
+	float: left;
+}
+
+.big-button, .med-button, .small-button {
+	background-color: red;
+	color: white;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	text-decoration: none;
+}
+
+.big-button {
+	padding: 20px 50px 20px 50px;
+	font-size: 3em;
+}
+
+.med-button {
+	padding: 15px 30px 15px 30px;
+	font-size: 1.5em;
+}
+
+.small-button {
+	padding: 5px;
+	font-size: 1em;
+}
+
+nav ul {
+	list-style-type: none;
+	background-color: red;
+	border-radius: 5px;
+	border: none;
+	padding: 0px;
+	width: auto;
+	display: inline-block;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 15px 30px 15px 30px;
+}
+
+nav ul li:hover a {
+	font-size: 1.5em;
+	color: yellow;
+	text-decoration: none;
+}
+
+nav ul li a {
+	font-size: 1.5em;
+	color: white;
+	text-decoration: none;
 }
